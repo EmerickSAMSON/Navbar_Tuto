@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  min-height: 200vh;
+}
+
+@media screen and (min-width: 967px) {
+  header {
+    font-family: "Roboto", sans-serif;
+    position: fixed; /* PERMET DE TOUJOURS AVOIR LE MENU AFFICHÉ*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    padding: 40px 100px;
+    z-index: 50; /* LA VALEUR IMPORTE PEU, IL FAUT JUSTE QU'ELLE SOIR SUPÉRIEURE À CELLE DE LA BANNIERE */
+  }
+
+  header.sticky {
+    padding: 20px 100px;
+    background: antiquewhite;
+  }
+
+  header .logo {
+    position: relative;
+    font-weight: 900;
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.4s;
+  }
+
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+
+  header ul li a {
+    position: relative;
+    margin: 0 15px; /* PERMET DE GERER L'ÉCART ENTRE LES ÉLÉMENTS LISTÉS DU MENU */
+    text-decoration: none;
+    color: antiquewhite;
+    letter-spacing: 2px;
+    transition: 0.4s;
+  }
+
+  .banniere {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(limbo-bg.jpg);
+    background-size: cover;
+    z-index: 0; /* IL N'EST PAS NÉCESSAIRE DE METTRE LE Z-INDEX ICI, IL SERT SURTOUT À ILLUSTRER LE Z-INDEX DU HEADER. DE BASE LE Z-INDEX EST À 0*/
+  }
+
+  header.sticky ul li a {
+    color: #000;
+  }
+
+  header.sticky a {
+    color: #000;
+  }
+}
+
+/* responsive tablette */
+
+@media only screen and (min-width: 800px) and (max-width: 966px) {
+
+  header {
+    font-family: "Roboto", sans-serif;
+    position: fixed; /* PERMET DE TOUJOURS AVOIR LE MENU AFFICHÉ*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    padding: 40px 100px;
+    z-index: 50; /* LA VALEUR IMPORTE PEU, IL FAUT JUSTE QU'ELLE SOIR SUPÉRIEURE À CELLE DE LA BANNIERE */
+  }
+
+  header.sticky {
+    padding: 20px 100px;
+    background: antiquewhite;
+  }
+
+  header .logo {
+    position: relative;
+    font-weight: 900;
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.4s;
+  }
+
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+
+  header ul li a {
+    position: relative;
+    margin: 0 15px; /* PERMET DE GERER L'ÉCART ENTRE LES ÉLÉMENTS LISTÉS DU MENU */
+    text-decoration: none;
+    color: antiquewhite;
+    letter-spacing: 2px;
+    transition: 0.4s;
+  }
+
+  .banniere {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(limbo-bg.jpg);
+    background-size: cover;
+    z-index: 0; /* IL N'EST PAS NÉCESSAIRE DE METTRE LE Z-INDEX ICI, IL SERT SURTOUT À ILLUSTRER LE Z-INDEX DU HEADER. DE BASE LE Z-INDEX EST À 0*/
+  }
+
+  header.sticky ul li a {
+    color: #000;
+  }
+
+  header.sticky a {
+    color: #000;
+  }
+}
+/* responsive mobile */
+
+@media only screen and (min-width: 321px) and (max-width: 799px) {
+
+  header {
+    font-family: "Roboto", sans-serif;
+    position: fixed; /* PERMET DE TOUJOURS AVOIR LE MENU AFFICHÉ*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+    padding: 40px 100px;
+    z-index: 50; /* LA VALEUR IMPORTE PEU, IL FAUT JUSTE QU'ELLE SOIR SUPÉRIEURE À CELLE DE LA BANNIERE */
+  }
+
+  header.sticky {
+    padding: 20px 100px;
+    background: antiquewhite;
+  }
+
+  header .logo {
+    position: relative;
+    font-weight: 900;
+    color: antiquewhite;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.4s;
+    display: none;
+  }
+
+  header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li {
+    position: relative;
+    list-style: none;
+  }
+
+  header ul li a {
+    position: relative;
+    margin: 0 15px; /* PERMET DE GERER L'ÉCART ENTRE LES ÉLÉMENTS LISTÉS DU MENU */
+    text-decoration: none;
+    color: antiquewhite;
+    letter-spacing: 2px;
+    transition: 0.4s;
+  }
+
+  .banniere {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  header.sticky ul li a {
+    color: #000;
+  }
+
+  header.sticky a {
+    color: #000;
+  }
+}
